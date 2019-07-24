@@ -63,7 +63,7 @@ func main() {
 			glog.Infof("Initialized Kafka producer for %s", grpcAddr)
 		}
 		publish := func(addr string, message proto.Message) {
-			glog.Infof(message)
+			glog.Infof("hi")
 			p.Write(message)
 		}
 		wg.Add(1)
